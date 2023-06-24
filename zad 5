@@ -1,0 +1,18 @@
+import math
+
+def szacuj_wartosc_ex(x, n):
+    suma = 0
+    for i in range(n+1):
+        xi = x ** i
+        factorial_i = math.factorial(i)
+        term = xi / factorial_i
+        suma += term
+    return suma
+
+ Wczytaj wartość x i liczbę n
+x = float(input("Podaj wartość x: "))
+n = int(input("Podaj liczbę wyrazów szeregu: "))
+
+ Oblicz i wyświetl przybliżoną wartość e^x
+wynik = szacuj_wartosc_ex(x, n)
+print("Przybliżona wartość e^x:", wynik)
