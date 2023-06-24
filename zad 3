@@ -1,0 +1,31 @@
+def calculate_m():
+    n = 0
+    k = 0
+
+    Wczytaj n
+    while n < 5:
+        n = int(input("Podaj liczbę n (n >= 5): "))
+
+   Wczytaj k
+    while k < 5:
+        k = int(input("Podaj liczbę k (k >= 5): "))
+
+    factorial_n = 1
+    factorial_k = 1
+
+    Oblicz silnię n
+    for i in range(1, n + 1):
+        factorial_n *= i
+
+    Oblicz silnię k
+    for i in range(1, k + 1):
+        factorial_k *= i
+
+   Oblicz wartość m
+    diff = factorial_n - factorial_k
+    m = diff / factorial_k
+
+    print("Wartość m =", m)
+
+Wywołanie funkcji calculate_m
+calculate_m()
