@@ -1,0 +1,15 @@
+lower = 1
+upper = 20
+guess = 0
+
+while guess != 0:
+    guess = (lower + upper) // 2  # Oblicz środkową liczbę z aktualnego zakresu
+    print("Czy twoja liczba to", guess, "?")
+    response = int(input("Odpowiedz: "))
+
+    if response < 0:
+        upper = guess - 1   Zmniejsz górny zakres poszukiwań
+    elif response > 0:
+        lower = guess + 1   Zwiększ dolny zakres poszukiwań
+
+print("Odgadłem liczbę!")
