@@ -1,0 +1,10 @@
+def power(base, exponent):
+    result = 1
+    for i in range(1, exponent + 1):
+        result *= base
+    return result
+
+base = 2
+exponent = 4
+result = power(base, exponent)
+print("Wynik potęgowania:", result)
