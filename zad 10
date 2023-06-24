@@ -1,0 +1,11 @@
+number = int(input("Podaj liczbę: "))
+count = 0
+
+while number > 0:
+    last_digit = number % 10
+    print(last_digit)
+    count += 1
+    number = number // 10
+
+if count <= 2:
+    print("Liczba ma mniej niż 3 cyfry.")
