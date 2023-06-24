@@ -1,0 +1,21 @@
+def oblicz_kapital():
+     Wczytaj dane wejściowe
+    kwota_poczatkowa = float(input("Podaj kwotę początkową: "))
+    oprocentowanie_roczne = float(input("Podaj oprocentowanie konta w skali roku: "))
+    liczba_miesiecy = int(input("Podaj liczbę miesięcy oszczędzania: "))
+
+     Oblicz oprocentowanie w skali miesiąca
+    oprocentowanie_miesieczne = oprocentowanie_roczne / 12
+
+     Oblicz wartość kapitału na koncie po zadanym okresie
+    kapital = kwota_poczatkowa * (1 + oprocentowanie_miesieczne/100) ** liczba_miesiecy
+
+     Oblicz wartość opodatkowanego kapitału z uwzględnieniem podatku Belki
+    podatek_belki = (kapital - kwota_poczatkowa) * 0.19
+    kapital -= podatek_belki
+
+     Wyświetl wynik
+    print("Wartość końcowa: ", kapital)
+
+ Wywołanie funkcji oblicz_kapital
+oblicz_kapital()
