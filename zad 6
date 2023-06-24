@@ -1,0 +1,16 @@
+def sprawdz_czy_silnia(x):
+    n = 1
+    silnia = 1
+    while silnia <= x:
+        n += 1
+        silnia *= n
+    if silnia == x:
+        print(x, "jest silnią liczby", n)
+    else:
+        print(x, "nie jest silnią żadnej liczby")
+
+ Wczytaj wartość x
+x = int(input("Podaj liczbę x: "))
+
+ Sprawdź czy x jest silnią liczby n
+sprawdz_czy_silnia(x)
