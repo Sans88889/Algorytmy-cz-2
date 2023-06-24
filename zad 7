@@ -1,0 +1,10 @@
+def znajdz_pary_liczb(n):
+    for a in range(n//2 + 1):
+        b = n - a
+        print("(", a, ",", b, ")")
+
+ Wczytaj wartość n
+n = int(input("Podaj liczbę n: "))
+
+ Wypisz wszystkie pary liczb o sumie n
+znajdz_pary_liczb(n)
